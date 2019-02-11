@@ -11,6 +11,7 @@ import { ControlsComponent } from './controls/controls.component';
   imports: [
     CommonModule,
     RouterModule.forRoot([
+      {path:'', redirectTo: '/simple-form', pathMatch: 'full'},
       {path:'simple-form', component:SimpleFormComponent},
       {path:'better-form', component:BetterFormComponent},
       {path:'controls', component:ControlsComponent}

@@ -10,7 +10,7 @@ a:link, a:visited, a:hover {
     color: khaki;
 }
 
-a:selected-item {
+a.selected-item{
     color: darkolivegreen;
     background-color: khaki;
 }

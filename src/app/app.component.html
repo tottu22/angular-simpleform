@@ -21,11 +21,11 @@
 <router-outlet></router-outlet>
 -->
 <nav>
- <!--<a routerLink="./simple-form" routerLinkActive="selected-item">Simple Form</a> |
+  <!--<a routerLink="./simple-form" routerLinkActive="selected-item">Simple Form</a> |
   <a routerLink="./better-form" routerLinkActive="selected-item">Better Form</a> |
-  <a routerLink="./controls" routerLinkActive="selected-item">Controls</a>
- -->
- <a *ngFor = "let path of paths" routerLinkActivate = "selected-item" [routerLink]="path.pathname">
+  <a routerLink="./controls" routerLinkActive="selected-item">Controls</a>-->
+
+  <a *ngFor = "let path of paths" routerLinkActive = "selected-item" [routerLink]="path.pathname">
    {{path.title}}
  </a>
 </nav>
