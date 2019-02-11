@@ -11,12 +11,14 @@ export class ControlsComponent implements OnInit {
   coffeeForm:FormGroup;
   hotcoldsel=["Hot", "Cold"];
   addssel=["Milk", "Sugar"];
+  nutsel=["ピーナッツ","アーモンド","くるみ"]
   constructor(private fb: FormBuilder) {
     this.coffeeForm=this.fb.group({
       name:   "ブレンド",
       taste:  "バランスのよい口当たり",
       hotcold: this.hotcoldsel[0],
-      adds: this.fb.array([])
+      adds: this.fb.array([]),
+      nut:this.nutsel[0]
     });
   }
 
